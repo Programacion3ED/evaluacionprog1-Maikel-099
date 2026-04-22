@@ -1,10 +1,9 @@
 import java.util.Scanner;
 
 public class Main {
-
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in); // <-- Línea descomentada
 
         System.out.println("=== SISTEMA DE USUARIO SEGURO ===");
 
@@ -19,7 +18,7 @@ public class Main {
         int maxIntentos = sc.nextInt();
         sc.nextLine(); // limpiar buffer
 
-        UsuarioSeguroAvanzado usuario = new UsuarioSeguroAvanzado(username, password, maxIntentos);
+        UsuarioSeguroAvanzado usuario = new UsuarioSeguroAvanzado(username, password, maxIntentos); // <-- Línea descomentada
 
         int opcion;
 
